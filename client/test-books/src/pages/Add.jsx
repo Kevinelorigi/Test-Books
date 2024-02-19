@@ -30,7 +30,7 @@ const Add = () => {
   };
 
   return (
-    <form className="">
+    <form onSubmit={handleClick} className="">
       <h1>Agregar Nuevo Libro</h1>
       <input
         type="text"
@@ -57,7 +57,7 @@ const Add = () => {
         onChange={handleChange}
         name="cover"
       />
-      <button onClick={handleClick}>Agregar</button>
+      <button type="submit">Agregar</button>
     </form>
   );
 };
