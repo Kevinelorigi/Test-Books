@@ -9,7 +9,6 @@ const Add = () => {
     price: null,
     cover: "",
   });
-
   const [error, setError] = useState(false);
 
   const navigate = useNavigate();
@@ -61,7 +60,12 @@ const Add = () => {
         onChange={handleChange}
         name="cover"
       />
-      <button  className="border-none p-5 bg-orange-300 text-white cursor-pointer" type="submit">Agregar</button>
+      <button
+        className="border-none p-5 bg-orange-300 text-white cursor-pointer"
+        type="submit"
+      >
+        Agregar
+      </button>
     </form>
   );
 };

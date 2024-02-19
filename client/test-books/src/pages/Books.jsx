@@ -19,7 +19,7 @@ const Books = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete("http://localhost:8800/books/" + id);
+      await axios.delete(`http://localhost:8800/books/${id}`);
       window.location.reload();
     } catch (err) {
       console.log(err);
@@ -44,12 +44,12 @@ const Books = () => {
             <span>{book.price}</span>
             <button
               className="border-none p-3 bg-red-400 rounded-md"
-              onClick={()=>handleDelete(book.id)}
+              onClick={() => handleDelete(book.id)}
             >
               Eliminar
             </button>
             <button className="border-none p-2 bg-blue-400 rounded-md">
-             <Link to={`/update/${book.id}`}>Actualizar</Link>
+              <Link to={`/update/${book.id}`}>Actualizar</Link>
             </button>
           </div>
         ))}
