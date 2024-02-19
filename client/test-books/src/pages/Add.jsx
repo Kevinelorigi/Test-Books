@@ -30,7 +30,7 @@ const Add = () => {
   };
 
   return (
-    <div className="form">
+    <form className="">
       <h1>Agregar Nuevo Libro</h1>
       <input
         type="text"
@@ -58,7 +58,7 @@ const Add = () => {
         name="cover"
       />
       <button onClick={handleClick}>Agregar</button>
-    </div>
+    </form>
   );
 };
 

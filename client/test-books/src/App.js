@@ -6,7 +6,7 @@ import Update from "./pages/Uptade.jsx";
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="min-h-[calc(100vh-70px)] p-5 flex items-center justify-center text-center">
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Books />} />
