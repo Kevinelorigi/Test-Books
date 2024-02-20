@@ -32,13 +32,11 @@ const Books = () => {
       <div className="flex gap-3">
         {books.map((book) => (
           <div key={book.id} className="flex flex-col gap-3 items-center">
-            {book.cover && (
-              <img
-                className="w-[200px] h-[300px] object-cover bg-green-100"
-                src={book.cover}
-                alt=""
-              />
-            )}
+            <img
+              className="w-[200px] h-[300px] object-cover bg-green-100"
+              src={book.cover}
+              alt=""
+            />
             <h2>{book.title}</h2>
             <h2>{book.desc}</h2>
             <span>{book.price}</span>
